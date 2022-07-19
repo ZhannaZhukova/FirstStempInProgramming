@@ -6,7 +6,7 @@ int [,]readPoint()
     string coordXLine = inputLine.Substring(0, inputLine.IndexOf(";"));
     coordXLine = coordXLine.Substring(coordXLine.IndexOf("=") + 1);
     string coordYLine = inputLine.Substring(inputLine.IndexOf(";") + 1);
-    coordYLine = coordYLine.Substring(coordXLine.IndexOf("=") + 1);
+    coordYLine = coordYLine.Substring(coordYLine.IndexOf("=") + 1);
     int coordX = int.Parse(coordXLine);
     int coordY = int.Parse(coordYLine);
     int[,] arrayOut = new int[1, 2];
