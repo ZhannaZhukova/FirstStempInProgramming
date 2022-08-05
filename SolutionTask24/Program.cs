@@ -1,9 +1,7 @@
-﻿// Написать программу, которая на вход принимает число А и выдает сумму чисел от 1 до А
-//Вариант 1
-Console.Clear();
-Console.WriteLine ("Введите число: ");
-int inputNumber = int.Parse (Console.ReadLine ());
+﻿Console.WriteLine ("Введите число: ");
+int inputNumber = int.Parse(Console.ReadLine());
 int t;
+
 void VariantSimple()
 {
     int SumOfNumbers =0;
