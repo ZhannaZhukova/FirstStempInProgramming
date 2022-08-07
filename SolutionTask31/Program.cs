@@ -31,11 +31,11 @@ void ColculateTask(int[] outArray)
     {
         if (outArray[i] > 0)
         {
-            positivSum++;
+            positivSum+=outArray[i];
         }
         else 
         {
-            negativSum++;
+            negativSum+=outArray[i];
         }
         i++;
     }
@@ -43,6 +43,7 @@ void ColculateTask(int[] outArray)
 //Выводим результат на консоль
 void PrintResult()
 {
+    Console.WriteLine();
     Console.WriteLine(positivSum);
     Console.WriteLine(negativSum);
 }
