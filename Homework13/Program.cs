@@ -32,7 +32,7 @@ void PrintIntArray(int[] inputArray)
         i++;
     }
 }
-//Метод решения задачи 33 наивный
+//Метод решения задачи 34 наивный
 int ColculateTask(int[] inputArray)
 {
     int resultSearch = 0;
