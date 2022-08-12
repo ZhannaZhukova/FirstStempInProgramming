@@ -54,3 +54,26 @@ int[] testArray = FillingArray(13);
 PrintIntArray(testArray);
 int[] reversedArray = ReversNewArray(testArray);
 PrintIntArray(reversedArray);
+//Метод, который меняет числа местами в исходном массиве
+//Получаем массив
+int[] ReversSwapArray(int[] array)
+{
+    //переменная длины
+    int length= array.Length;
+    //буфферная переменная
+    int buf;
+    
+//доходим до середины массива
+    for (int i=0; i<length/2; i++)
+    {
+        buf=array[i];
+        array[i]=array[length-1 -i];
+        array[length-1 - i]=buf;
+    }
+    return array;
+}
+//int[] testArray = FillingArray(13);
+//PrintIntArray(testArray);
+//int[] reversedArray = ReversNewArray(testArray);
+//PrintIntArray(reversedArray);
+PrintIntArray (ReversSwapArray (testArray));
